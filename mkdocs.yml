@@ -1,0 +1,42 @@
+site_name: SLX Script Docs
+docs_dir: 'mkdocs'
+site_dir: 'docs'
+nav:
+  - Home: index.md
+  - Scripts:
+    - Pedestrian System: pages/pedestrian.md
+  - Other:
+    - Upcoming : pages/upcoming.md
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: cyan
+    accent: indigo
+
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.sections
+    #- navigation.path
+    #- navigation.indexes
+    #- navigation.top
+    - toc.integrate
+    - toc.follow
+
+plugins:
+  - glightbox
+
+markdown_extensions:
+- pymdownx.highlight:
+    anchor_linenums: true
+    line_spans: __span
+    pygments_lang_class: true
+- pymdownx.inlinehilite
+- pymdownx.snippets
+- pymdownx.superfences
+- pymdownx.blocks.caption
+- attr_list
+- md_in_html
