@@ -1,4 +1,4 @@
-site_name: SLX Script Docs
+site_name: Pivot Point Labs Wiki
 docs_dir: 'mkdocs'
 site_dir: 'docs'
 nav:
@@ -9,6 +9,8 @@ nav:
     - Upcoming : pages/upcoming.md
 
 theme:
+  logo: assets/acronymdarknobg.png
+  favicon: assets/pplicon.png
   name: material
   palette:
     scheme: slate
