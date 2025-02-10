@@ -1,10 +1,8 @@
-# Welcome!
-
+#
 <figure markdown="span">
   ![PPL logo](assets/PPL_transparent.png){ .off-glb width="auto" }
 </figure>
-
-At Pivot Point Labs, we create custom Assetto Corsa scripts that integrate seamlessly with your map — eliminating the need for a separate app. But if you need an app, we build those too! We also develop maps, bringing unique and immersive experiences to the game.
+At Pivot Point Labs, we create custom Assetto Corsa tracks, aswell as scripts that integrate seamlessly with your map — eliminating the need for a separate app (But if you need an app, we build those too). Our maps bring a unique and immersive experiences to the game while showcasing our scripts in action.
 
 Whether you need a custom script or want to purchase an existing one, we’ve got you covered. Some scripts are free, while premium options are encrypted to ensure they work exclusively with your map.
 
