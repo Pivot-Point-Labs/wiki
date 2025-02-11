@@ -487,23 +487,32 @@
 </div>
 <div class="tabbed-block">
 <p>Server owners can use the <a href="https://raw.githubusercontent.com/Pivot-Point-Labs/scripts/refs/heads/main/teleport-system/teleport.lua">raw GIT url</a> to load scripts directly from github, without downloading anything. Add this to your <a href="https://github.com/ac-custom-shaders-patch/acc-extension-config/wiki/Misc-%E2%80%93-Server-extra-options">CSP extra options</a> in Content Manager (if you use this to configure your server):</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Keep in mind that a config has to be <a href="https://github.com/Pivot-Point-Labs/script-configs/tree/main/online/tracks">created and uploaded</a> for the server script to work!</p>
+</div>
 <div class="language-ini highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">[SCRIPT_...]</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="na">SCRIPT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;https://raw.githubusercontent.com/Pivot-Point-Labs/scripts/refs/heads/main/teleport-system/teleport.lua&#39;</span>
 </span></code></pre></div>
 <p>Thats it, you're all set up!</p>
 </div>
 <div class="tabbed-block">
-<p>Players usually dont need to do anything! If the track author has the script included with the map - or if the server you are playing is running this script, teleports will "just work".
-However you want to create your own teleports for maps that dont have them included, the setup is pretty much the same as for track authors. Keep in mind that you may not be able to play online if you modified a track yourself.</p>
+<p>Players usually don’t need to do anything! If the track author has included the script with the map—or if the server you are playing on is running this script—teleports will "just work."</p>
+<p>However, if you want to create your own teleports for maps that don’t have them included, the setup is pretty much the same as for track authors. Keep in mind that modifying a track yourself may prevent you from playing online.</p>
 </div>
 </div>
 </div>
 <h2 id="creating-teleports-debugging">Creating teleports &amp; debugging</h2>
-<p>Instead of loading a config file from github, you can create your own <code>teleports.json</code> next to your <code>ext_config.ini</code>, which will be loaded instead. I suggest you take an already existing config and modify it to your needs. You can display debugging visuals by modifying your ext_config entry like this:</p>
+<p>Instead of loading a config file from github, you can create your own <code>teleports.json</code> next to your <code>ext_config.ini</code>, which will be loaded instead. 
+I suggest you take an already existing config and modify it to your needs. You can display debugging visuals by modifying your ext_config entry like this:</p>
 <div class="language-ini highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">[SCRIPT_...]</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="na">debug</span><span class="o">=</span><span class="s">true</span><span class="w"> </span><span class="c1">; this adds debugging cubes for teleport-triggers and spawns</span>
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="na">SCRIPT</span><span class="o">=</span><span class="s">&#39;teleport.lua&#39;</span>
 </span></code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Debugging works client <strong>and/or</strong> server side; however, the teleports.json file will only be loaded in singleplayer.</p>
+</div>
 <p>I also suggest opening the Lua Debug app and searching for something along the lines of "Track Script". It will show you the cars current position and your camera heading, which makes it a lot easier to copy values into the json file.</p>
 <details class="example">
 <summary>An example teleports.json could look like this (click to open):</summary>
@@ -571,7 +580,8 @@ However you want to create your own teleports for maps that dont have them inclu
 </li>
 </ul>
 <h2 id="submitting-your-config">Submitting your config</h2>
-<p>TBD</p>
+<p>After you created a config and validated it in singleplayer, you can create a <a href="https://github.com/Pivot-Point-Labs/script-configs/issues/new?title=[Teleport Config] request&amp;body=Track folder: YOUR_TRACK_FOLDER%0A%0A%60%60%60json%0APlease put your json config within these quotes%0A%60%60%60" target="_blank">GitHub issue</a>, a <a href="https://github.com/Pivot-Point-Labs/script-configs/pulls" target="_blank">pull request</a> or you text me on discord (please don't, just figure out how to use GitHub).</p>
+<p>Once a config is accepted and added to the repository, it will be available to everyone.</p>
 
 
 
