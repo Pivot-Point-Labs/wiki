@@ -497,7 +497,7 @@
 <h2 id="creating-teleports-debugging">Creating teleports &amp; debugging</h2>
 <p>Instead of loading a config file from github, you can create your own <code>teleports.json</code> next to your <code>ext_config.ini</code>, which will be loaded instead. I suggest you take an already existing config and modify it to your needs. You can display debugging visuals by modifying your ext_config entry like this:</p>
 <div class="language-ini highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">[SCRIPT_...]</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="na">debugging</span><span class="o">=</span><span class="s">true</span><span class="w"> </span><span class="c1">; this adds debugging cubes for teleport-triggers and spawns</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="na">debug</span><span class="o">=</span><span class="s">true</span><span class="w"> </span><span class="c1">; this adds debugging cubes for teleport-triggers and spawns</span>
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="na">SCRIPT</span><span class="o">=</span><span class="s">&#39;teleport.lua&#39;</span>
 </span></code></pre></div>
 <p>I also suggest opening the Lua Debug app and searching for something along the lines of "Track Script". It will show you the cars current position and your camera heading, which makes it a lot easier to copy values into the json file.</p>

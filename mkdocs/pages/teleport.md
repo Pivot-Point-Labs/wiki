@@ -65,7 +65,7 @@ Instead of loading a config file from github, you can create your own `teleports
 
 ```ini
 [SCRIPT_...]
-debugging=true ; this adds debugging cubes for teleport-triggers and spawns
+debug=true ; this adds debugging cubes for teleport-triggers and spawns
 SCRIPT='teleport.lua'
 ```
 
