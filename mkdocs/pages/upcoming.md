@@ -28,8 +28,3 @@
 ## 3D Fake Interior Shader
 
 This shader can be used as a texture to emulate a room without using any geometry. The shader uses clever math and parallax to imitate real perspective.
-
-## Teleport Menu
-
-![Teleport Menu](../assets/tpmenu.png){: style="height:150px;width:auto" align=left}
-Opens a full-screen popup when driving into a trigger, giving you a nice UI to select where to teleport - with alternative spawns when a car is blocking the location.

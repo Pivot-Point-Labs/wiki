@@ -5,6 +5,7 @@ nav:
   - Home: index.md
   - Scripts:
     - Pedestrian System: pages/pedestrian.md
+    - Teleport System: pages/teleport.md
   - Other:
     - Upcoming : pages/upcoming.md
 
@@ -28,6 +29,8 @@ theme:
     #- navigation.top
     - toc.integrate
     - toc.follow
+    - content.code.copy
+    - content.code.select
 
 plugins:
   - glightbox
@@ -40,6 +43,8 @@ markdown_extensions:
 - pymdownx.inlinehilite
 - pymdownx.snippets
 - pymdownx.superfences
+- pymdownx.tabbed:
+      alternate_style: true
 - pymdownx.blocks.caption
 - attr_list
 - md_in_html
