@@ -63,15 +63,15 @@ An example teleports.json could look like this:
         "Location 1": {
             "spawns": [
                 {
-                    "location": [25.18,0,-17.11],
+                    "position": [25.18,0,-17.11],
                     "heading": [0.36,0.00,-0.93]
                 },
                 {
-                    "location": [25.13,-0,-21.15],
+                    "position": [25.13,-0,-21.15],
                     "heading": [0.36,0.00,-0.93]
                 },
                 {
-                    "location": [25.10,0,-25.18],
+                    "position": [25.10,0,-25.18],
                     "heading": [0.36,0.00,-0.93]
                 }
             ],
@@ -80,11 +80,11 @@ An example teleports.json could look like this:
         "Location 2": {
             "spawns": [
                 {
-                    "location": [21.09,0,-17.10],
+                    "position": [21.09,0,-17.10],
                     "heading": [0.36,0.00,-0.93]
                 },
                 {
-                    "location": [21.09,0,-21.10],
+                    "position": [21.09,0,-21.10],
                     "heading": [0.36,0.00,-0.93]
                 }
             ],
@@ -93,7 +93,7 @@ An example teleports.json could look like this:
         "Location 3": {
             "spawns": [
                 {
-                    "location": [17.06,0,-17.04],
+                    "position": [17.06,0,-17.04],
                     "heading": [-0.978682, 0.201236, -0.0410538]
                 }
             ],
@@ -103,13 +103,14 @@ An example teleports.json could look like this:
 }
 ```
 
-- The `triggers` array consists of coordinate points that define specific trigger locations in a 3D space. Each trigger is represented as an array of three values [X, Y, Z].
-- The `locations` object contains a set of predefined locations, each labeled with a name (e.g., "Location 1", "Location 2"). Each location consists of
-    - Spawns:  A list of spawn points, each with a location and a heading
-    - Image: A URL pointing to an image representation of the location.
+- The `triggers` array consists of coordinate points that serve as the activation point of the teleport menu (drive through and the menu appears).
+- The `locations` object (Labeled above as "Location 1", "Location 2", ...,) defines each location on the track for players to teleport to. Each location object is defined by two things:
+    - Image: A URL pointing to an image used as preview.
+    - Spawns:  defines the coordinates for spawns. Compirised of:
+        - `Position`: the exact coordinates to place a spawnpoint within a location
+        - `Heading`: a direction vector that indicated where the car is facing after spawning
+    
 
+## Submitting your config
 
-Each spawn entry contains:
-
-- Location: A three-dimensional coordinate [X, Y, Z] defining the spawn position.
-- Heading: A three-dimensional vector [X, Y, Z] indicating the direction the car is facing upon spawning.
+TBD
