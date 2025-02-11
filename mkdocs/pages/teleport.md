@@ -28,6 +28,26 @@ The teleports are always fetched [from github](https://github.com/Pivot-Point-La
     SCRIPT='<path_to_lua_from_extensions_folder>/teleport.lua'
     ```
 
+    Then add the following at the top of your `surfaces.ini`
+    ```ini
+    [_SCRIPTING_PHYSICS]
+    ALLOW_TRACK_SCRIPTS=1
+    ```
+
+    And add or change`WAV_PITCH` to `WAV_PITCH=extended-0` on `[SURFACE_0]`
+
+    Example:
+
+    ```ini
+    [_SCRIPTING_PHYSICS]
+    ALLOW_TRACK_SCRIPTS=1
+
+    [SURFACE_0]
+    ...
+    WAV_PITCH=extended-0
+    ...
+    ```
+
 === "For server owners"
 
     Server owners can use the [raw GIT url](https://raw.githubusercontent.com/Pivot-Point-Labs/scripts/refs/heads/main/teleport-system/teleport.lua) to load scripts directly from github, without downloading anything. Add this to your [CSP extra options](https://github.com/ac-custom-shaders-patch/acc-extension-config/wiki/Misc-%E2%80%93-Server-extra-options) in Content Manager (if you use this to configure your server):
@@ -36,6 +56,8 @@ The teleports are always fetched [from github](https://github.com/Pivot-Point-La
     [SCRIPT_...]
     SCRIPT = 'https://raw.githubusercontent.com/Pivot-Point-Labs/scripts/refs/heads/main/teleport-system/teleport.lua'
     ```
+
+    Thats it, you're all set up!
 
 ## Creating teleports & debugging
 
