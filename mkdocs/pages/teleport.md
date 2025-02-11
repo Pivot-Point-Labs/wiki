@@ -2,7 +2,6 @@
 status: new
 ---
 
-
 # Teleport System
 
 ![Teleport Menu](../assets/tpmenu.png){: style="height:150px;width:auto" align=right}
@@ -133,7 +132,7 @@ I also suggest opening the Lua Debug app and searching for something along the l
     ```
 
 - The `triggers` array consists of coordinate points that serve as the activation point of the teleport menu (drive through and the menu appears).
-- The `locations` object (Labeled above as "Location 1", "Location 2", ...,) defines each location on the track for players to teleport to. Each location object is defined by two things:
+- The `locations` object (Labeled in the example as "Location 1", "Location 2", ...,) defines each location on the track for players to teleport to. Each location object is defined by two things:
     - Image: A URL pointing to an image used as preview.
     - Spawns:  defines the coordinates for spawns. Compirised of:
         - `Position`: the exact coordinates to place a spawnpoint within a location
