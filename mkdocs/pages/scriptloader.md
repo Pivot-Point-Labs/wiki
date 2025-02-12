@@ -60,7 +60,7 @@ return {update, draw3D}
 
 ### The automated solution
 
-This loader script has an automated solution that may or may not work. It checks if a string along the lines of `return {script.update, script.draw3D}` exists and if not, automatically appends its own code that returns the correct table. It may fail at times because pattern matching in LUA is very limited - however it worked fine in my testing.
+This loader script has an automated solution that may or may not work. It checks if a string along the lines of `return {script.update, script.draw3D}` exists and if not, automatically appends its own code that returns the correct table. It may fail at times because pattern matching in LUA is very limited - however, it worked fine in my testing.
 
 To use it, add `autofix=true` to the script entry
 
