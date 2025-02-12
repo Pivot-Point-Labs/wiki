@@ -33,6 +33,8 @@ You can add this ini config as many times as you want with different URLs.
 
 Externally loaded scripts can not execute their own `script.update` or `script.update3D` functions. The way this is solved is by returning the functions itself so that this loader script can call them. This is a really hacky workaround but it seems to work just fine. Scripts must be changed to return a table with either `script.update` and `script.update3D` or `update` and `update3D` as values. It is important that the function names used and returned **MUST** match. For example:
 
+<div class="grid" markdown>
+
 ```lua
 function script.update(dt)
 end
@@ -43,7 +45,7 @@ end
 return {script.update, script.draw3D}
 -- NOT return {update, draw3D}
 ```
-or
+
 ```lua
 function update(dt)
 end
@@ -54,6 +56,10 @@ end
 return {update, draw3D}
 -- NOT return {script.update, script.draw3D}
 ```
+
+</div>
+
+
 !!! warning
     The first value has to be `update` or `script.update`, the second value has to be `draw3D` or `script.draw3D`. You can pass `nil` as value if you dont use one or the other function.
 
