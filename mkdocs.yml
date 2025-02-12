@@ -6,6 +6,7 @@ nav:
   - Scripts:
     - Pedestrian System: pages/pedestrian.md
     - Teleport System: pages/teleport.md
+    - Scriptloader: pages/scriptloader.md
   - Other:
     - Upcoming : pages/upcoming.md
 
