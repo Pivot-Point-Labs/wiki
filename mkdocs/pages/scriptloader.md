@@ -4,9 +4,12 @@ status: new
 
 # Scriptloader
 
-This is a very simple script that just serves as a loader for scripts hosted online. The CSP API does not allow track scripts to load scripts via URL directly (unlike apps or server scripts, where you can simply pass a URL instead of a path), however we can go around this by loading the script (that we actually want) from within this script loader.
+This is a very simple **track**-script that just serves as a loader for scripts hosted online. The CSP API does not allow track scripts to load scripts via URL directly (unlike apps or server scripts, where you can simply pass a URL instead of a path), however we can go around this by loading the script (that we actually want) from within this script loader.
 
 The advantage of this over a track-script directly built into the map is simply that it can be updated "on the fly", without the track author needing to ship a new version of their track with the updated script.
+
+At the moment, the loaded script should not be able access ini settings or files on the players pc.
+
 
 !!! info
     Since this loader script takes in a URL, it only works if the player actually has an internet connection! Scripts are not stored locally.
