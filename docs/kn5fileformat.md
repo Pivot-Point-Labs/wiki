@@ -43,9 +43,12 @@ KN5 is the binary 3D model format used by Assetto Corsa for **cars and tracks**.
 flowchart LR
     H[Header] --> T[Textures] --> M[Materials] --> N[Root node]
     N --> C1[NODE] --> C2[MESH]
-    N --> C3[NODE] --> C4[MESH]
-    N --> C5[SKINNED_MESH]
+    N --> C3[NODE]
+    N --> C4[NODE] --> C5[NODE] --> C6[MESH]
+    N --> C7[SKINNED_MESH]
 ```
+
+KsEditor flattens all nodes & meshes for tracks, which yields better performance. With cars, nodes can have any amount of sub-nodes before the mesh. This is also possible (and valid) for tracks but not advised. If you need more sub-nodes (for example to move them around), you can [wrap meshes](https://github.com/ac-custom-shaders-patch/acc-extension-config/wiki/Tracks-%E2%80%93-Meshes-manipulation#wrapping-meshes) instead.
 
 ??? info "Type notation used on this page"
 
