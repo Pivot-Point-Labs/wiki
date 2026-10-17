@@ -1,14 +1,14 @@
 [project]
 site_url = "https://pivot-point-labs.github.io/wiki/"
 site_name = "PPL Wiki"
-# site_description = "Your project description"
+site_description = "Pivot Point Labs Wiki. Focusing on performance optimizations, ideas, scripts & anything else Assetto Corsa related."
 # site_author = "Your name"
 
 copyright = "Copyright &copy; 2026 Pivot Point Labs"
 
-# repo_url = "https://github.com/user/repo"
+repo_url = "https://github.com/Pivot-Point-Labs/wiki"
 # repo_name = "user/repo"
-# edit_uri = "edit/main/docs/"
+edit_uri = "edit/main/docs/"
 
 nav = [
   { "Home" = "index.md" },
@@ -22,6 +22,13 @@ nav = [
       { "Textures" = "optimizations/textures.md" },
     ] },
   ] },
+
+  { "Other" = [
+    { "CSP Wiki (mirror)" = "https://pivot-point-labs.github.io/csp-wiki-mirror/" },
+    { "RTB Discord" = "https://discord.gg/kAy8TmcEB" },
+  ] },
+
+  
 ]
 
 # extra_css = ["stylesheets/extra.css"]
@@ -34,8 +41,8 @@ nav = [
 language = "en"
 features = [
   "announce.dismiss",
-  # "content.action.edit",
-  # "content.action.view",
+  "content.action.edit",
+  "content.action.view",
   "content.code.annotate",
   "content.code.copy",
   "content.code.select",
