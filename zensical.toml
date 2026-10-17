@@ -20,6 +20,7 @@ nav = [
       { "LODs" = "optimizations/lods.md" },
       { "Materials" = "optimizations/materials.md" },
       { "Textures" = "optimizations/textures.md" },
+      { "Extension Config" = "optimizations/extconf.md" },
     ] },
   ] },
 
