@@ -25,6 +25,7 @@ nav = [
   ] },
 
   { "Other" = [
+    { "KN5 File Format" = "kn5fileformat.md" },
     { "CSP Wiki (mirror)" = "https://pivot-point-labs.github.io/csp-wiki-mirror/" },
     { "RTB Discord" = "https://discord.gg/kAy8TmcEB" },
   ] },
