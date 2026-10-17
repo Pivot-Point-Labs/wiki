@@ -1,2 +1,0 @@
-# Pivot Point Labs Wiki
- 

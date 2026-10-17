@@ -1,0 +1,16 @@
+site/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Keep the Pages artifact out of git even if a build is run locally here.
+.github/workflows/*.tmp
