@@ -6,7 +6,7 @@ description: A beginner-friendly tutorial on consolidating duplicate materials i
 # Merging Materials
 
 Having many duplicate materials is a common issue. Things like `Concrete.001`, `Concrete.002`, `Concrete.003` all look the same, but count as different materials. Merging them down to a single shared material is one of the biggest performance wins for draw calls.
-
+.
 !!! tip "Goal"
     The goal isn't to use as few materials as possible at all costs. The goal is to **reuse the same material** across objects that share the same surface look.
 
