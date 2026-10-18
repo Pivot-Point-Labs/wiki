@@ -14,18 +14,26 @@ nav = [
   { "Home" = "index.md" },
 
   { "Wiki" = [
+
     { "Optimizations" = [
-      { "Draw Calls" = "optimizations/drawcalls.md" },
-      { "Culling" = "optimizations/culling.md" },
-      { "LODs" = "optimizations/lods.md" },
-      { "Materials" = "optimizations/materials.md" },
-      { "Textures" = "optimizations/textures.md" },
-      { "Extension Config" = "optimizations/extconf.md" },
-    ] },
-  ] },
+      "optimizations/drawcalls.md",
+      "optimizations/culling.md",
+      "optimizations/lods.md",
+      "optimizations/materials.md",
+      "optimizations/textures.md",
+      "optimizations/extconf.md",
+    ]},
+
+    { "Tutorials" = [
+        "tutorials/combining-meshes.md",
+        "tutorials/merging-materials.md",
+        "tutorials/texture-creation-modification.md",
+    ]},
+
+  ]},
 
   { "Other" = [
-    { "KN5 File Format" = "kn5fileformat.md" },
+    "kn5-fileformat.md",
     { "CSP Wiki (mirror)" = "https://pivot-point-labs.github.io/csp-wiki-mirror/" },
     { "RTB Discord" = "https://discord.gg/kAy8TmcEB" },
   ] },
@@ -51,13 +59,13 @@ features = [
   "content.footnote.tooltips",
   "content.tabs.link",
   "content.tooltips",
-  # "header.autohide",
+  "header.autohide",
   "navigation.expand",
   "navigation.footer",
   "navigation.indexes",
   "navigation.instant",
   "navigation.instant.prefetch",
-  # "navigation.instant.progress",
+  "navigation.instant.progress",
   "navigation.path",
   # "navigation.prune",
   "navigation.sections",
@@ -126,6 +134,7 @@ pymdownx.keys = {}
 pymdownx.magiclink = {}
 pymdownx.mark = {}
 pymdownx.smartsymbols = {}
+pymdownx.blocks.caption = {}
 # pymdownx.snippets.base_path = "includes"
 pymdownx.superfences.custom_fences = [
   { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
@@ -134,6 +143,12 @@ pymdownx.tabbed.alternate_style = true
 pymdownx.tabbed.combine_header_slug = true
 pymdownx.tasklist.custom_checkbox = true
 pymdownx.tilde = {}
+
+
+[[project.markdown_extensions.zensical.extensions.preview.configurations]]
+targets.include = [
+  "*",
+]
 
 [project.extra]
 generator = false

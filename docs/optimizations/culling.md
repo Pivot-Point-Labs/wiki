@@ -1,5 +1,11 @@
+---
+title: Culling
+description: Every culled object saves draw calls, vertex processing and pixel shading
+#icon: material/file-cog-outline
+---
+
 # Culling
- 
+
 ## What is culling?
  
 Culling means skipping objects that cannot contribute to the final image, so the CPU and GPU never have to draw them. Every culled object saves draw calls, vertex processing and pixel shading.
