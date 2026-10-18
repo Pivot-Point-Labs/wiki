@@ -14,7 +14,7 @@ In Assetto Corsa, draw calls are influenced by factors such as mesh organization
 - **Reduce material slots:** A mesh with multiple materials may require multiple draw calls. Use fewer materials where possible. Creating a KN5 file will split meshes by material automatically, increasing the load.
 - **Use texture atlases:** Combine textures for compatible materials into one atlas. This allows multiple surfaces to share a material and can reduce draw calls.
 - **Reuse materials:** Use the same material across objects whenever their shader settings and texture requirements are compatible. Dont create materials like "Lamppost1". Create "Galvanized Steel" and reuse that for many more meshes.
-- **Optimize repeated objects:** Linked duplicates save mesh data in Blender, but do not automatically reduce draw calls in Assetto Corsa. Combine static geometry where appropriate.
+- **Optimize repeated objects:** Join static objects that are always together and link all to a single shared material when appropriate. When exporting to KN5, all meshes are split by material, so joining 80 lamppost objects that each carry their own unique material still costs 80 draw calls. The same 80 objects joined under one shared material cost only 1 draw call.
 - **Use LODs:** Simplify distant objects to reduce geometry and rendering costs. Create and show high detail models only when the player is close to them (0-100) and show a lower poly version of the model at a greater distance (101-400). (The numbers provided are examples and depend on the amount of LODs and their detail)
 - **Limit transparency:** Transparent materials can require additional rendering work. Avoid unnecessary transparent surfaces and overlapping geometry.
 
