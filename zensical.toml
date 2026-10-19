@@ -34,6 +34,9 @@ nav = [
 
   { "Other" = [
     "kn5-fileformat.md",
+  ] },
+
+  { "External" = [
     { "CSP Wiki (mirror)" = "https://pivot-point-labs.github.io/csp-wiki-mirror/" },
     { "RTB Discord" = "https://discord.gg/kAy8TmcEB" },
   ] },
@@ -119,7 +122,7 @@ attr_list = {}
 def_list = {}
 footnotes = {}
 md_in_html = {}
-toc.permalink = true
+toc.permalink = "⚓︎"
 pymdownx.arithmatex.generic = true
 pymdownx.betterem = {}
 pymdownx.caret = {}
@@ -151,11 +154,15 @@ targets.include = [
 ]
 
 [project.plugins.autorefs]
+link_titles = true
 
 [project.plugins.callouts]
 
 [project.plugins.glightbox]
 
+[project.plugins.search]
+
+[project.plugins.minify]
 
 [project.extra]
 generator = false
