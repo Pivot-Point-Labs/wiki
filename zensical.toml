@@ -6,7 +6,7 @@ site_description = "Pivot Point Labs Wiki. Focusing on performance optimizations
 
 copyright = "Copyright &copy; 2026 Pivot Point Labs"
 
-repo_url = "https://github.com/Pivot-Point-Labs/wiki"
+# repo_url = "https://github.com/Pivot-Point-Labs/wiki"
 # repo_name = "user/repo"
 edit_uri = "edit/main/docs/"
 
@@ -27,7 +27,7 @@ nav = [
     { "Tutorials" = [
         "tutorials/combining-meshes.md",
         "tutorials/merging-materials.md",
-        "tutorials/texture-creation-modification.md",
+        "tutorials/texture-workflow.md",
     ]},
 
   ]},
@@ -37,8 +37,9 @@ nav = [
   ] },
 
   { "External" = [
-    { "CSP Wiki (mirror)" = "https://pivot-point-labs.github.io/csp-wiki-mirror/" },
+    { "PPL Discord" = "https://discord.gg/NrqfYGQX8B" },
     { "RTB Discord" = "https://discord.gg/kAy8TmcEB" },
+    { "CSP Wiki (mirror)" = "https://pivot-point-labs.github.io/csp-wiki-mirror/" },
   ] },
 
   
@@ -98,12 +99,16 @@ toggle.name = "Switch to light mode"
 [[project.theme.palette]]
 media = "(prefers-color-scheme: light)"
 scheme = "default"
+primary = "cyan"
+accent = "cyan"
 toggle.icon = "lucide/sun"
 toggle.name = "Switch to dark mode"
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme: dark)"
 scheme = "slate"
+primary = "cyan"
+accent = "cyan"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to system preference"
 
