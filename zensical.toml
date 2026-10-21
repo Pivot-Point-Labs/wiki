@@ -24,11 +24,11 @@ nav = [
       "optimizations/extconf.md",
     ]},
 
-#    { "Tutorials" = [
-#        "tutorials/combining-meshes.md",
-#        "tutorials/merging-materials.md",
-#        "tutorials/texture-creation-modification.md",
-#    ]},
+    { "Tutorials" = [
+        "tutorials/combining-meshes.md",
+        "tutorials/merging-materials.md",
+        "tutorials/texture-creation-modification.md",
+    ]},
 
   ]},
 
