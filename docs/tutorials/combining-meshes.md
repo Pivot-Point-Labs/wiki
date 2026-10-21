@@ -1,6 +1,7 @@
 ---
 title: Combining Meshes
 description: A beginner-friendly guide to combining meshes in Blender and Race Track Builder to reduce draw calls.
+icon: lucide/combine
 ---
 
 # Combining Meshes
@@ -68,35 +69,5 @@ One of the easiest ways to reduce the amount of objects in your scene is by comb
 
     !!! info "Do most of the work in Blender"
 
-        RTB isn't designed for heavy mesh editing. For best results, combine your meshes in Blender first after exporting them from RTB. You will have to do this every time you export a new map or an update, unless you re-import the combined mesh into RTB and use that instead.
-
-    ### Step 1: Prepare your mesh
-
-    Follow the Blender steps above to create a clean, combined mesh. Give it a clear, descriptive name (e.g. `wall_section_a`) to find it easily later.
-
-    ### Step 2: Export & Import
-
-    1. Export your combined mesh in the format RTB expects for your project
-    2. Import it into your track like you would any other mesh
-    3. Assign the correct material in RTB
-
-    ### Step 3: Place and test
-
-    1. Position the combined object in its final spot
-    2. Test visibility from different camera angles (cockpit, chase, etc.)
-    3. If it becomes very large, consider splitting it into a couple of smaller cullable sections instead.
-
-    ### Tips for RTB
-
-    - **Cullable chunks > one mega mesh**: Splitting a long building into 2-4 pieces often performs better than merging the entire thing.
-    - **Keep modularity in mind**: If you might reuse a piece in multiple places, it's often better to keep it as its own object rather than permanently joining it to something else.
-    - **Material match**: For draw call benefits, the combined mesh must share the same material as intended.
-
-    ## Quick Checklist
-
-    - [ ] Only combining **static** geometry
-    - [ ] All selected meshes share the **same material** (or you're planning to fix materials next)
-    - [ ] Cleaned up doubles & normals after joining
-    - [ ] Didn't join instanced/linked duplicates
-    - [ ] Kept collision separate
-    - [ ] Split into reasonable, cullable chunks if very large
+        RTB isn't designed for heavy mesh editing. To avoid constant "fixing after an RTB export", you can export your meshes, use blender to optimize them and then import them back into RTB (overwriting your unoptimized, non-merged objects).
+        If you think you will never update your map, fixing it once in blender at the end is fine.
