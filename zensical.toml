@@ -24,11 +24,11 @@ nav = [
       "optimizations/extconf.md",
     ]},
 
-    { "Tutorials" = [
-        "tutorials/combining-meshes.md",
-        "tutorials/merging-materials.md",
-        "tutorials/texture-creation-modification.md",
-    ]},
+#    { "Tutorials" = [
+#        "tutorials/combining-meshes.md",
+#        "tutorials/merging-materials.md",
+#        "tutorials/texture-creation-modification.md",
+#    ]},
 
   ]},
 
@@ -49,11 +49,11 @@ nav = [
 
 [project.theme]
 # variant = "classic"
-# custom_dir = "overrides"
+custom_dir = "overrides"
 # favicon = "images/favicon.png"
 language = "en"
 features = [
-  "announce.dismiss",
+  # "announce.dismiss",
   "content.action.edit",
   "content.action.view",
   "content.code.annotate",
