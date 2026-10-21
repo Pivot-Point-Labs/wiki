@@ -1,4 +1,8 @@
-
+---
+title: Draw Calls
+description: A draw call is a command that tells the GPU to render geometry. Each draw call has CPU overhead.
+#icon: material/file-cog-outline
+---
 
 # Draw Calls
 

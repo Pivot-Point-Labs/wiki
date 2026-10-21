@@ -1,3 +1,9 @@
+---
+title: LODs
+description: Close objects get full detail, distant objects get a simplified version.
+#icon: material/file-cog-outline
+---
+
 # LODs
  
 ## What are LODs?

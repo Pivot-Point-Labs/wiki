@@ -1,3 +1,9 @@
+---
+title: Extension Config
+description: Defines things like track lights, specific car settings, additional tyres textures and so on.
+#icon: material/file-cog-outline
+---
+
 # Extension Config
 
 The extension config itself is already quite optimized, however there are a few things you can do to increase performance.

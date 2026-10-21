@@ -1,3 +1,9 @@
+---
+title: Materials
+description: The shader decides how expensive the surface is to render.
+#icon: material/file-cog-outline
+---
+
 # Materials
  
 ## What are materials in Assetto Corsa?

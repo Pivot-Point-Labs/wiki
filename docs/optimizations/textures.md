@@ -1,5 +1,11 @@
+---
+title: Textures
+description: Textures mostly affect video memory (VRAM), memory bandwidth, loading times and the size of the KN5 file.
+#icon: material/file-cog-outline
+---
+
 # Textures
- 
+
 ## Why do textures matter?
  
 Textures mostly affect **video memory (VRAM)**, memory bandwidth, loading times and the size of the KN5 file. They usually do not change the number of draw calls directly. Too many or too large textures lead to stutters, long loading times, or crashes on cards with little VRAM, especially in combination with many cars on track.
