@@ -19,10 +19,14 @@ A material in the KN5 is a shader plus its settings (colors, specular values and
 - **Be careful with layered and blended shaders:** Shaders that blend several textures (terrain, multi-layer materials) are more expensive per pixel. Use them where they matter, such as large visible ground areas, and not everywhere.
 - **Watch extra effects from Custom Shaders Patch:** Additional features such as extra reflections or special shading cost performance on every surface that uses them. Enable them only where they make a visible difference.
 - **Name materials by what they are:** Names like "Galvanized Steel" make it easy to see when you are about to create a duplicate.
+
 ## Common misconceptions
  
-- **Joining objects merges materials.** It doesn't. A joined mesh still has its materials, and each one can still become its own draw call. See [Draw Calls][what-are-draw-calls].
-- **More expensive shaders only cost when they are close.** The cost is per pixel on screen, so a big surface far away can still be expensive.
+**Joining objects merges materials.**
+:   It doesn't. A joined mesh still has its materials, and each one can still become its own draw call. See [Draw Calls][what-are-draw-calls].
+
+**More expensive shaders only cost when they are close.**
+:   The cost is per pixel on screen, so a big surface far away can still be expensive.
 
 ## Related
  

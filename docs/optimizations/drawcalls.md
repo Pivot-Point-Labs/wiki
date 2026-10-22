@@ -24,7 +24,14 @@ In Assetto Corsa, draw calls are influenced by factors such as mesh organization
 
 ## Common misconceptions
 
-- **Fewer polygons do not necessarily mean fewer draw calls.** Geometry complexity and draw call count are separate performance factors.
-- **Joining objects does not automatically merge materials.** A single mesh can still generate multiple draw calls.
-- **One material does not mean one draw call.** Separate objects and rendering passes may still require separate calls.
-- **Fewer objects do not always mean better performance.** Large meshes can reduce the effectiveness of visibility culling.
+**Fewer polygons do not necessarily mean fewer draw calls.**
+:   Geometry complexity and draw call count are separate performance factors.
+
+**Joining objects does not automatically merge materials.**
+:   A single mesh can still generate multiple draw calls.
+
+**One material does not mean one draw call.**
+:   Separate objects and rendering passes may still require separate calls.
+
+**Fewer objects do not always mean better performance.**
+:   Large meshes can reduce the effectiveness of visibility culling.

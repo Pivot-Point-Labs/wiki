@@ -20,13 +20,24 @@ Textures mostly affect **video memory (VRAM)**, memory bandwidth, loading times 
 - **Use trim sheets and atlases:** Put many small details (signs, barriers, props) on one shared texture. This saves memory and lets objects share a material, which helps [Draw Calls][what-are-draw-calls].
 - **Skip maps you don't need:** A flat, matte surface does not need a normal map or a specular map. Don't keep an alpha channel if nothing uses it. Be careful with shaders that read data from the alpha channel of a texture, since removing it changes the look.
 - **Check the final size:** Look at the finished KN5 and the biggest textures in it. A few oversized textures are usually responsible for most of the memory use.
+
 ## Common misconceptions
  
-- **Bigger textures always look better.** With mipmaps and distance, the extra resolution is often never visible, but you still pay for it in memory.
-- **Smaller PNG/JPG files mean less VRAM.** File size on disk and size in memory are two different things.
-- **PNG/JPG are fine because the game handles mipmaps itself.** It does, but it has to generate them in memory on every track start, which makes loading slower. DDS with mips included avoids that.
-- **Texture size affects draw calls.** It doesn't. The number of materials and meshes does. Sharing textures (atlases) helps draw calls only because materials can be shared.
-- **A 4K texture on a small prop is a safe choice.** It is wasted memory. Reuse a shared texture instead.
+**Bigger textures always look better.**
+:   With mipmaps and distance, the extra resolution is often never visible, but you still pay for it in memory.
+
+**Smaller PNG/JPG files mean less VRAM.**
+:   File size on disk and size in memory are two different things.
+
+**PNG/JPG are fine because the game handles mipmaps itself.**
+:   It does, but it has to generate them in memory on every track start, which makes loading slower. DDS with mips included avoids that.
+
+**Texture size affects draw calls.**
+:   It doesn't. The number of materials and meshes does. Sharing textures (atlases) helps draw calls only because materials can be shared.
+
+**A 4K texture on a small prop is a safe choice.**
+:   It is wasted memory. Reuse a shared texture instead.
+
 ## Related
  
 - [Materials][what-are-materials-in-assetto-corsa]

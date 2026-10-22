@@ -62,10 +62,17 @@ Usually not worth it:
 - Objects that are only visible from a short range anyway
 ## Common misconceptions
  
-- **LODs automatically reduce draw calls.** They reduce geometry. A lower LOD with the same number of meshes and materials costs about the same number of draw calls as the high one. See [Draw Calls][what-are-draw-calls].
-- **More LOD levels are always better.** Each level adds objects, memory and file size, and more places to cause popping. Two or three levels are enough for most objects.
-- **LODs replace good modelling.** If the high detail model is far too heavy, it will still hurt performance wherever it is visible.
-- **Everything needs LODs.** For small, simple props the extra objects can cost more than they save.
+**LODs automatically reduce draw calls.**
+:   They reduce geometry. A lower LOD with the same number of meshes and materials costs about the same number of draw calls as the high one. See [Draw Calls][what-are-draw-calls].
+
+**More LOD levels are always better.**
+:   Each level adds objects, memory and file size, and more places to cause popping. Two or three levels are enough for most objects.
+
+**LODs replace good modelling.**
+:   If the high detail model is far too heavy, it will still hurt performance wherever it is visible.
+
+**Everything needs LODs.**
+:   For small, simple props the extra objects can cost more than they save.
 
 ## Related
  
