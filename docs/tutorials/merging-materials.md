@@ -54,6 +54,10 @@ Having many duplicate materials is a common issue. Things like `Concrete.001`, `
     !!! info "Fix in Blender whenever possible"
         It's far easier and safer to merge materials in Blender before exporting. RTB can reassign materials, but fixing the source file prevents it from happening again.
 
+    !!! note "Still under construction"
+        This section is still being written. Check back later.
+
+<!--
     ### Step 1: Import your cleaned-up file
     Export your .blend changes and import/update your meshes in RTB as usual. With unified materials in Blender, you should see far fewer duplicates in RTB.
 
@@ -67,6 +71,8 @@ Having many duplicate materials is a common issue. Things like `Concrete.001`, `
 
     ### Step 3: Test
     Look around your track and make sure nothing lost its look. Pay extra attention to transparent objects (decals, fences) as they need correct alpha settings.
+-->
+---
 
 ## Tips for Beginners
 
@@ -75,6 +81,8 @@ Having many duplicate materials is a common issue. Things like `Concrete.001`, `
 - **Be careful with transparency**: Opaque and transparent surfaces often need different shader settings. Don't merge a glass material with a concrete material.
 - **UVs matter**: If two objects use the same material but their UVs are laid out badly, you'll get texture stretching/bleeding. Fix UVs before merging.
 - **Vertex colors can add variation**: Instead of making a new material for "wet" vs "dry" looking concrete, you can use vertex colors + a node setup to tint. This keeps one material.
+
+
 
 ## Quick Checklist
 
