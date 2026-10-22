@@ -16,7 +16,7 @@ In Assetto Corsa track creation this is usually done by giving each object a `LO
  
 - **Make a simplified version of each important object:** Reduce polygon count, remove tiny details, bevels and inner geometry that cannot be seen from a distance. Blender's Decimate modifier is a good start, but check the result by eye and clean it up manually where needed.
 - **Assign distance ranges:** Show the high detail model only when the player is close (0-100) and a lower poly version further away (101-400). Use matching values so one version ends where the next one begins. Otherwise you get gaps (nothing visible) or overlaps (both visible). (The numbers are examples and depend on the amount of LODs and their detail.)
-- **Let the last LOD disappear:** Small objects should not stay visible forever. Give the lowest LOD an out distance after which the object is hidden. This is also a form of [culling](culling.md).
+- **Let the last LOD disappear:** Small objects should not stay visible forever. Give the lowest LOD an out distance after which the object is hidden. This is also a form of [culling][what-is-culling].
 - **Simplify materials too:** A lower LOD can use fewer materials, or even a single shared one. Together with merged meshes this is what actually saves draw calls.
 - **Disable shadows on lower LODs:** Distant shadow casters are rarely noticeable, but still cost rendering time.
 - **Keep silhouette and UVs close:** The LOD should look like the original from the distance where it takes over. A big change in shape, color or texture is visible as "popping".
@@ -42,7 +42,7 @@ LOD_OUT = 100
 
 [SHADER_REPLACEMENT_...]
 MESHES = ?_LOD2
-LOD_IN = 101
+LOD_IN = 100
 LOD_OUT = 300
 ```
 
@@ -62,13 +62,20 @@ Usually not worth it:
 - Objects that are only visible from a short range anyway
 ## Common misconceptions
  
-- **LODs automatically reduce draw calls.** They reduce geometry. A lower LOD with the same number of meshes and materials costs about the same number of draw calls as the high one. See [Draw Calls](drawcalls.md).
-- **More LOD levels are always better.** Each level adds objects, memory and file size, and more places to cause popping. Two or three levels are enough for most objects.
-- **LODs replace good modelling.** If the high detail model is far too heavy, it will still hurt performance wherever it is visible.
-- **Everything needs LODs.** For small, simple props the extra objects can cost more than they save.
+**LODs automatically reduce draw calls.**
+:   They reduce geometry. A lower LOD with the same number of meshes and materials costs about the same number of draw calls as the high one. See [Draw Calls][what-are-draw-calls].
+
+**More LOD levels are always better.**
+:   Each level adds objects, memory and file size, and more places to cause popping. Two or three levels are enough for most objects.
+
+**LODs replace good modelling.**
+:   If the high detail model is far too heavy, it will still hurt performance wherever it is visible.
+
+**Everything needs LODs.**
+:   For small, simple props the extra objects can cost more than they save.
 
 ## Related
  
-- [Draw Calls](drawcalls.md)
-- [Culling](culling.md)
-- [Materials](materials.md)
+- [Draw Calls][what-are-draw-calls]
+- [Culling][what-is-culling]
+- [Materials][what-are-materials-in-assetto-corsa]

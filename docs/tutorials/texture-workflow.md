@@ -1,9 +1,10 @@
 ---
-title: Texture Creation & Modification (DDS with Mipmaps)
+title: Texture Workflow
 description: A beginner-friendly guide to creating, editing, and exporting DDS textures with proper mipmaps for Assetto Corsa.
+icon: material/texture-box
 ---
 
-# Texture Creation & Modification (DDS with Mipmaps)
+# Texture Workflow
 
 Assetto Corsa and CSP work best with **.DDS** textures that include **mipmaps**. If you use PNG/JPG, the game has to generate mipmaps on load (slower) and they take more VRAM in practice. This guide walks you through creating clean textures and converting them properly.
 
